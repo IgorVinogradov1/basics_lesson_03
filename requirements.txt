@@ -1,0 +1,10 @@
+certifi==2025.10.5
+charset-normalizer==3.4.4
+docopt==0.6.2
+idna==3.11
+num2words==0.5.14
+python-dotenv==1.2.1
+requests==2.32.5
+six==1.17.0
+transliterate==1.10.2
+urllib3==2.5.0
