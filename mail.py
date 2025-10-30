@@ -1,6 +1,9 @@
 from dotenv import load_dotenv
 load_dotenv()
 import os
+import smtplib
+
+
 login_mail = os.getenv('LOGIN')
 pass_mail = os.getenv('PASSWORD')
 letter = ("""\
@@ -32,7 +35,6 @@ friend_name = 'Александр'
 my_name = 'Игорь'
 letter = letter.format(s=login_mail, r=receiver, w=website, f=friend_name, m=my_name)
 letter = letter.encode('UTF-8')
-import smtplib
 server = smtplib.SMTP_SSL('smtp.yandex.ru', 465)
 server.login(login_mail, pass_mail)
 server.sendmail(login_mail, receiver, letter)
