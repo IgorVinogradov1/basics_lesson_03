@@ -1,9 +1,9 @@
-from dotenv import load_dotenv
-load_dotenv()
 import os
 import smtplib
 
 
+from dotenv import load_dotenv
+load_dotenv()
 login_mail = os.getenv('LOGIN')
 pass_mail = os.getenv('PASSWORD')
 receiver = 'ваш e-mail' # не заполнена почта
